@@ -21,10 +21,6 @@ This plugin brings the power of Google's automatic translation service to transl
 * Practically null impact on page loads.
 * Import/Export settings to easily transfer configurations.
 
-= System requirements: =
-* WordPress 3.3 or greater version.
-* PHP 5 or greater version.
-
 == Installation ==
 
 1. Go to the WordPress admin panel.
