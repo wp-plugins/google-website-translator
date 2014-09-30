@@ -21,6 +21,8 @@ This plugin brings the power of Google's automatic translation service to transl
 * Practically null impact on page loads.
 * Import/Export settings to easily transfer configurations.
 
+For feature requests, please [contact us](https://www.prisna.net/contact-us/).
+
 == Installation ==
 
 1. Go to the WordPress admin panel.
