@@ -59,9 +59,11 @@ Support includes:
 
 == Screenshots ==
 
-1. General admin panel.
-2. Advanced admin panel.
-3. Import/Export admin panel.
+1. General admin panel (inline).
+2. General admin panel (tabbed).
+3. Advanced admin panel.
+4. Import/Export admin panel.
+5. Go premium panel.
 
 == Changelog ==
 

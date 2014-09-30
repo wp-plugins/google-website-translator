@@ -2,7 +2,7 @@
 
 <div class="prisna_gwt_header">
 	<div class="prisna_gwt_header_icon">
-		<div class="prisna_gwt_header_title">Prisna: {{ title_message }}</div>
+		<div class="prisna_gwt_header_title"><a href="http://www.prisna.net/?d=96bf1f652e7648e6a8163cdd0a8fba41" target="_blank">Prisna</a>: {{ title_message }}</div>
 	</div>
 </div>
 
