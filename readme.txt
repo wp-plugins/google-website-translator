@@ -20,8 +20,15 @@ This plugin brings the power of Google's automatic translation service to transl
 * Use it as a widget and as a shortcode.
 * Practically null impact on page loads.
 * Import/Export settings to easily transfer configurations.
+* For feature requests, please [contact us](https://www.prisna.net/contact-us/).
 
-For feature requests, please [contact us](https://www.prisna.net/contact-us/).
+= Advantages over similar plugins: =
+There are a number of Google translation plugins in this great repository. However, most of them haven't been carefully built. Here's a list of reasons of why you should use this plugin:
+
+* All the settings are stored in only one record in the database; whilst other plugins use lots of records.
+* It's the fastest as it doesn't load any external file; whilst other plugins load unnecessary javascript and css files.
+* It includes all the options of the original [Google Website Translator](https://translate.google.com/manager/website/); whilst other plugins offer a restricted version.
+* Prisna Ltd. is a real company ([register record](https://www.prisna.net/images/prisna-limited.pdf)), which has professional people working on it. 
 
 == Installation ==
 
