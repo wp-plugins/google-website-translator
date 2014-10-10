@@ -3,7 +3,7 @@
 /*
  * Plugin Name: Google Website Translator by Prisna.net
  * Plugin URI: http://wordpress.org/extend/plugins/google-website-translator/
- * Description: Bring the power of the WordPress.com cloud to your self-hosted WordPress. Jetpack enables you to connect your blog to a WordPress.com account to use the powerful features normally only available to WordPress.com users.
+ * Description: This plugin brings the power of Google's automatic translation service to translate your website into 70+ languages. It also comes with a slick admin panel, so it can be installed into your client's website without losing the professional look and feel of your work.
  * Author: Prisna
  * Version: 1.0
  * Author URI: http://www.prisna.net/
