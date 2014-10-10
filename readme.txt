@@ -27,7 +27,7 @@ There are a number of Google translation plugins in this great repository. Howev
 
 * All the settings are stored in only one record in the database; whilst other plugins use lots of records.
 * It's the fastest as it doesn't load any external file; whilst other plugins load unnecessary javascript and css files.
-* It includes all the options of the original [Google Website Translator](https://translate.google.com/manager/website/); whilst other plugins offer a restricted version.
+* It includes all the options of the original [Google Website Translator](https://translate.google.com/manager/website/); whilst other plugins offer just a restricted version.
 * Prisna Ltd. is a real company ([register record](https://www.prisna.net/images/prisna-limited.pdf)), with professional people working on it. 
 
 == Installation ==
