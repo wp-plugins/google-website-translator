@@ -502,6 +502,7 @@ select.prisna_gwt_select {
 	background-position: left top;
 	display: block;
 	padding-top: 1px;
+	line-height: 18px;
 }
 
 .prisna_gwt_radio_option:checked + label ,
