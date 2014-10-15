@@ -11,7 +11,7 @@ class PrisnaGWTUninstall {
 		
 		require_once dirname(__FILE__) . '/classes/config.class.php';
 		
-		$name = PrisnaGWT::getDbSettingsName();
+		$name = PrisnaGWTConfig::getDbSettingsName();
 		
 		if (get_option($name))
 			delete_option($name);
