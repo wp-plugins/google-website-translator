@@ -240,7 +240,7 @@ class PrisnaGWTAdminForm extends PrisnaGWTAdminBaseForm {
 
 		$this->advanced_message = __('Advanced', 'prisna-gwt');
 		$this->advanced_general_message = __('General', 'prisna-gwt');
-		$this->premium_message = __('Upgrade', 'prisna-gwt');
+		$this->premium_message = __('Premium', 'prisna-gwt');
 		$this->advanced_import_export_message = __('Import / Export', 'prisna-gwt');
 		$this->advanced_import_success_message = __('Settings succesfully imported.', 'prisna-gwt');
 		$this->advanced_import_fail_message = __('There was a problem while importing the settings. Please make sure the exported string is complete. Changes weren\'t saved.', 'prisna-gwt');
