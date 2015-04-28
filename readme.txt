@@ -3,7 +3,7 @@ Contributors: Prisna
 Tags: translation plugin, automatic translation, machine translation, automatic translate, google website translator, google translator, google language translator, language translate, language translator, multi language, translate, translation
 Stable tag: 1.0
 Requires at least: 3.3
-Tested up to: 4.1
+Tested up to: 4.2
 License: GPL2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
