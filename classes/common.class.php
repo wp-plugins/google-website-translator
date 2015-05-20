@@ -740,20 +740,49 @@ class PrisnaGWTUI extends WP_Widget {
 			$class_name .= 'image';
 		}
 
+		if ($display_mode == 'inline') {
+			$title = isset($_instance['title']) ? $_instance['title'] : __('', 'prisna-gwt');
+			$class_name .= ' prisna_gwt_widget_has_title';
+			echo '<p><label for="' . $this->get_field_id('title') . '">' . __('Title:', 'prisna-gwt') . '</label><input class="widefat" id="' . $this->get_field_id('title') . '" name="'. $this->get_field_name('title') . '" type="text" value="' . esc_attr($title) . '"></p>';
+		}
 		
-
 		echo '<div class="' . $class_name . '">' . $result . '</div>';
 
-		return 'noform';
+		if ($display_mode != 'inline')
+			return 'noform';
 
+	}
+
+	protected function _add_class($_html, $_class_name) {
+		
+		$result = $_html;
+		
+		$pattern = '/\bclass\=\".*?\"/';
+		preg_match($pattern, $_html, $matches);
+		
+		if (empty($matches))
+			$result = str_replace('>', ' class="' . $_class_name . '">', $result);
+		else {
+			$class_attribute = substr($matches[0], 0, -1) . ' ' . $_class_name . '"';
+			$result = str_replace($matches[0], $class_attribute, $result);
+		}
+
+		return $result;
+		
 	}
 
 	public function widget($_arguments, $_instance) {
 
+		$display_mode = PrisnaGWTConfig::getSettingValue('display_mode');
+		$title = apply_filters('widget_title', $_instance['title']);
+		
 		extract($_arguments, EXTR_SKIP);
  
 		echo $before_widget;
 
+		if ($display_mode == 'inline' && !empty($title))
+			echo $this->_add_class($_arguments['before_title'], 'prisna-gwt-align-' . PrisnaGWTConfig::getSettingValue('align_mode')) . $title . $_arguments['after_title'];
+			
 		echo do_shortcode('[' . PrisnaGWTConfig::getWidgetName(true) . ']');
 		
 		echo $after_widget;

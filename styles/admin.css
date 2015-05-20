@@ -64,6 +64,10 @@
 	padding: 15px 0 5px !important;
 }
 
+.prisna_gwt_widget_has_title.prisna_gwt_widget_container_image {
+	padding: 5px 0 15px !important;
+}
+
 .prisna_gwt_widget_container_image img {
 	max-width: 250px;
 }
