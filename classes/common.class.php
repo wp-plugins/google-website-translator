@@ -774,7 +774,7 @@ class PrisnaGWTUI extends WP_Widget {
 	public function widget($_arguments, $_instance) {
 
 		$display_mode = PrisnaGWTConfig::getSettingValue('display_mode');
-		$title = apply_filters('widget_title', $_instance['title']);
+		$title = array_key_exists('title', $_instance) ? apply_filters('widget_title', $_instance['title']) : null;
 		
 		extract($_arguments, EXTR_SKIP);
  
