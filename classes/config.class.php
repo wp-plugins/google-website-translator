@@ -180,11 +180,11 @@ class PrisnaGWTConfig {
 				
 				<code>%s</code><br /><br />
 				
-				- Copy and paste the following code into pages, posts, etc...<br /><br />
+				- Or copy and paste the following code into pages, posts, etc...<br /><br />
 				
 				<code>[prisna-google-website-translator]</code><br /><br />
 				
-				- Copy and paste the following code into any PHP file<br /><br />
+				- Or copy and paste the following code into any page, post or front end PHP file<br /><br />
 				
 				<code>&lt;?php echo do_shortcode(\'[prisna-google-website-translator]\'); ?&gt;</code><br />
 				
@@ -453,7 +453,7 @@ class PrisnaGWTConfig {
 				'value' => 'hide',
 				'values' => array(
 					'hide' => __('Completely hide the translation banner', 'prisna-gwt'),
-					'true' => __('Automatically display translation banner', 'prisna-gwt'),
+					/*'true' => __('Automatically display translation banner', 'prisna-gwt'), Disabled feature until Google fixes it */
 					'false' => __('Don\'t display translation banner automatically', 'prisna-gwt')
 				),
 				'dependence' => 'other_customizations',
