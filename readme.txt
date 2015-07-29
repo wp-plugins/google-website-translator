@@ -24,6 +24,7 @@ This plugin brings the power of Google's automatic translation service to transl
 
 = Support: =
 We respond to every single support request from our users. If you need help or have questions:
+
 * Create a ticket here in the WordPress support forum: [https://wordpress.org/support/plugin/google-website-translator](https://wordpress.org/support/plugin/google-website-translator)
 * Or you can also ask for assistance directly from our website: [https://www.prisna.net/contact-us/](https://www.prisna.net/contact-us/)
 
