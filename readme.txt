@@ -7,7 +7,7 @@ Tested up to: 4.3
 License: GPL2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Translate your website into 80+ languages. This plugin includes the whole set of Google's Website Translator features, no disabled functionality. 
+Translate your website into 80+ languages. This plugin includes the whole set of Google's Website Translator features, no disabled functionality.
 
 == Description ==
 
