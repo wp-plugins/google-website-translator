@@ -7,11 +7,11 @@ Tested up to: 4.3
 License: GPL2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add Google Website Translator to your website, and make it instantly available in 70+ languages. Adding the translator is quick and easy.
+Translating your website into 80+ languages is now quick and easy. This plugin includes the whole set of Google's Website Translator features, no disabled functionality. 
 
 == Description ==
 
-This plugin brings the power of Google's automatic translation service to translate your website into 70+ languages. It also comes with a slick admin panel, so it can be installed into your client's website without losing the professional look and feel of your work.
+This plugin brings the power of Google's automatic translation service to translate your website into 80+ languages. It also comes with a slick admin panel, so it can be installed into your client's website without losing the professional look and feel of your work.
 
 = Features: =
 * Easy set up, including simple settings with inline help that everybody can understand.

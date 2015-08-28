@@ -206,14 +206,6 @@ class PrisnaGWTAdminForm extends PrisnaGWTAdminBaseForm {
 	public $group_2;
 	public $group_3;
 	public $group_4;
-	public $group_5;
-	public $group_6;
-	public $group_7;
-	public $group_8;
-	public $group_9;
-	public $group_10;
-	public $group_11;
-	public $group_12;
 
 	public $nonce;
 	
