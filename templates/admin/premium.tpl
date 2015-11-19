@@ -6,6 +6,12 @@
     font-size: 1em !important;
     text-align: left !important;
 }
+.prisna-sale-wrapper a {
+	display: block;
+}
+.prisna-promote-wrapper .prisna-promote .prisna-gwt-social-wrapper a {
+	display: inline;
+}
 .prisna-promote-wrapper .prisna-promote a,
 .prisna-promote-wrapper .prisna-promote a img {
     border: none !important;
@@ -14,7 +20,16 @@
     text-align: left !important;
 }
 .prisna-promote-wrapper .prisna-logo {
-    padding: 20px 30px 0 !important;
+    padding: 15px 30px 0 !important;
+    position: relative;
+}
+.prisna-promote-wrapper .prisna-logo .prisna-gwt-social-wrapper td {
+	padding: 0 !important;
+}
+.prisna-gwt-social-wrapper {
+	position: absolute;
+	right: 0;
+	top: -5px;
 }
 .prisna-promote-wrapper .prisna-logo td {
     padding: 0 5px !important;
@@ -291,7 +306,110 @@
     height: 15px !important;
     line-height: 18px !important
 }
+.prisna-gwt-social {
+	float: right;
+	margin-bottom: 2px;
+	color: #6BB130 !important;
+}
 
+.prisna-gwt-fb-button-container {
+	background: #4c69ba;
+	background: -webkit-gradient(linear, center top, center bottom, from(#4c69ba), to(#3b55a0));
+	background: -webkit-linear-gradient(#4c69ba, #3b55a0);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 3px;
+	cursor: pointer;
+}
+
+.prisna-gwt-fb-button-container:hover {
+	background: #5b7bd5;
+	background: -webkit-gradient(linear, center top, center bottom, from(#5b7bd5), to(#4864b1));
+	background:-webkit-linear-gradient(#5b7bd5, #4864b1);
+	border-color: #5874C3 #4961A8 #41599F;
+	-webkit-box-shadow: inset 0 0 1px #607FD6;
+}
+
+.prisna-gwt-social .fb,
+.prisna-gwt-fb-button-count,
+.prisna-gwt-fb-button-container,
+.prisna-gwt-fb-button-image,
+.prisna-gwt-fb-button-label {
+	float: left;
+}
+
+.prisna-gwt-fb-button-image i {
+	background-image: url({{ images_path }}/fb.png);
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: 0 -42px;
+	display: inline-block;
+	float: left;
+	height: 14px;
+	width: 14px;
+}
+
+.prisna-gwt-fb-button-text,
+.prisna-gwt-fb-button-label {
+	line-height: 14px !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 11px !important;
+	height: auto !important;
+}
+
+.prisna-gwt-fb-button-label {
+	font-weight: bold;
+	color: #fff !important;
+	margin-left: 3px;
+	margin-right: 2px;
+}
+
+.prisna-gwt-fb-button-count {
+	border: 1px solid #9197A3;
+	display: inline-block;
+	font-size: 11px;
+	height: auto;
+	line-height: 18px;
+	margin-left: 6px;
+	min-width: 15px;
+	padding: 0 2px 0 1px;
+	text-align: center;
+	white-space: nowrap;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.prisna-gwt-fb-button-text {
+	color: #4E5665 !important;
+}
+
+.prisna-gwt-fb-button-count-nub {
+	height: 0;
+	left: 2px;
+	position: relative;
+	top: 5px;
+	width: 5px;
+	z-index: 2;
+	float: none !important;
+}
+
+.prisna-gwt-fb-button-count-nub s,
+.prisna-gwt-fb-button-count-nub i {
+	border-color: transparent #9197A3;
+	border-style: solid;
+	border-width: 4px 5px 4px 0;
+	display: block;
+	position: relative;
+	top: 1px;
+}
+
+.prisna-gwt-fb-button-count-nub i {
+	border-right-color: white;
+	left: 2px;
+	top: -7px;
+}
 </style>
 <div class="prisna_gwt_section prisna_gwt_{{ type }}{{ dependence.show.false:begin }} prisna_gwt_no_display{{ dependence.show.false:end }}{{ has_dependence.true:begin }} prisna_gwt_section_tabbed_{{ dependence_count }}{{ has_dependence.true:end }}" id="section_{{ id }}">
 
@@ -299,8 +417,64 @@
 		<div class="prisna_gwt_field prisna-promote-wrapper">
 
 			<table cellpadding="0" cellspacing="0" class="prisna-promote">
+{{ black_friday.true:begin }}
+				<tr>
+					<td class="prisna-sale">
+						<table cellpadding="0" cellspacing="0" class="prisna-center prisna-sale-wrapper">
+							<tr>
+								<td class="prisna-bg-green">
+									<a href="https://www.prisna.net/get-the-translation-plugin/?d=2a77e8c7e292a519949930f6034af1f4" target="_blank"><img src="{{ images_path }}/banner.png" /></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+{{ black_friday.true:end }}
 				<tr>
 					<td class="prisna-logo">
+
+						<div class="prisna-gwt-social-wrapper">
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<div class="prisna-gwt-social">Subscribe and don't miss any promotion!</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="prisna-gwt-social">
+											<div class="prisna-gwt-fb">
+												<table cellspacing="0" cellpadding="0">
+													<tbody>
+														<tr>
+															<td>
+																<div class="prisna-gwt-fb-button-container">
+																	<div class="prisna-gwt-fb-button-image">
+																		<a href="https://www.facebook.com/PrisnaLtd" target="_blank"><i></i></a>
+																	</div>
+																	<a href="https://www.facebook.com/PrisnaLtd" target="_blank"><span class="prisna-gwt-fb-button-label">Prisna on Facebook</span></a>
+																</div>
+															</td>
+															<td>
+																<div class="prisna-gwt-fb-button-count">
+																	<a href="https://www.facebook.com/PrisnaLtd" target="_blank">
+																		<span>
+																			<span class="prisna-gwt-fb-button-text">1k</span>
+																		</span>
+																	</a>
+																</div>
+																<div class="prisna-gwt-fb-button-count-nub"><s></s><i></i></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					
 						<table cellpadding="0" cellspacing="0" class="prisna-center">
 							<tr>
 								<td><a href="http://www.prisna.net/?d=96bf1f652e7648e6a8163cdd0a8fba41" target="_blank"><img src="https://drive.google.com/uc?export=view&id=0B-gW4fMlT7WSdHZhVDJPYnk1NGc" alt="Prisna" title="Prisna" class="prisna-logo-image" /></a></td>
@@ -460,8 +634,8 @@
 						<table cellpadding="0" cellspacing="0">
 							<tr>
 								<td>
-									<h3><a href="http://www.prisna.net/wordpress-translation-plugin-screenshots/#general" target="_blank">+ 63 Available languages</a></h3>
-									Afrikaans, Albanian, Arabic, Azerbaijani, Basque, Bengali, Belarusian, Bulgarian, Catalan, Chinese Simplified, Chinese Traditional, Croatian, Czech, Danish, Dutch, English, Esperanto, Estonian, Filipino, Finnish, French, Galician, Georgian, German, Greek, Gujarati, Haitian Creole, Hebrew, Hindi, Hungarian, Icelandic, Indonesian, Irish, Italian, Japanese, Kannada, Korean, Latvian, Lithuanian, Macedonian, Malay, Maltese, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swahili, Swedish, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu, Vietnamese, Welsh, Yiddish.
+									<h3><a href="http://www.prisna.net/wordpress-translation-plugin-screenshots/#general" target="_blank">+ 91 Available languages</a></h3>
+									Afrikaans, Albanian, Arabic, Armenian, Azerbaijani, Basque, Belarusian, Bengali, Bosnian, Bulgarian, Catalan, Cebuano, Chichewa, Chinese Simplified, Chinese Traditional, Croatian, Czech, Danish, Dutch, English, Esperanto, Estonian, Filipino, Finnish, French, Galician, Georgian, German, Greek, Gujarati, Haitian Creole, Hausa, Hebrew, Hindi, Hmong, Hungarian, Icelandic, Igbo, Indonesian, Irish, Italian, Japanese, Javanese, Kannada, Kazakh, Khmer, Korean, Lao, Latin, Latvian, Lithuanian, Macedonian, Malagasy, Malay, Malayalam, Maltese, Maori, Marathi, Mongolian, Burmese, Nepali, Norwegian, Persian, Polish, Portuguese, Punjabi, Romanian, Russian, Serbian, Sesotho, Sinhala, Slovak, Slovenian, Somali, Spanish, Sundanese, Swahili, Swedish, Tajik, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu, Uzbek, Vietnamese, Welsh, Yiddish, Yoruba and Zulu.
 								</td>
 							</tr>
 							<tr>
@@ -478,6 +652,12 @@
 							</tr>
 							<tr>
 								<td>
+									<h3><a href="http://www.prisna.net/updates/" target="_blank">+ Free updates</a></h3>
+									This translation plugin is updated regularly to improve its functionality and features.	These updates are free of charge for customers who have bought the plugin, for life.
+								</td>
+							</tr>
+							<tr>
+								<td>
 									<h3><a href="http://www.prisna.net/contact-us/" target="_blank">+ Tech support</a></h3>
 									Have questions or need help? Contact our highly qualified support centre and get your answers right away.
 								</td>
@@ -489,7 +669,7 @@
 					<td class="prisna-wrapper prisna-clarification">
 						<table cellpadding="0" cellspacing="0">
 							<tr>
-								<td>Note: The images displayed on this tab are loaded from Google Drive.</td>
+								<td>Note: External images displayed on this tab are loaded from Google Drive only.</td>
 							</tr>
 						</table>
 					</td>

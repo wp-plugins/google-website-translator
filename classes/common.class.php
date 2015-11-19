@@ -139,9 +139,29 @@ class PrisnaGWTCommon {
 		
 	}
 
-	public static function getLanguages() {
+	public static function getLanguages($_sort=true) {
 	
-		return array(
+		$languages = array(
+			'en' => 'English',
+			'fr' => 'French',
+			'nl' => 'Dutch',
+			'el' => 'Greek',
+			'de' => 'German',
+			'es' => 'Spanish',
+			'zh-CN' => 'Chinese Simplified',
+			'zh-TW' => 'Chinese Traditional',
+			'pl' => 'Polish',
+			'pt' => 'Portuguese',
+			'th' => 'Thai',
+			'pa' => 'Punjabi',
+			'ro' => 'Romanian',
+			'ru' => 'Russian',
+			'no' => 'Norwegian',
+			'da' => 'Danish',
+			'fi' => 'Finnish',
+			'hi' => 'Hindi',
+			'it' => 'Italian',
+			'ja' => 'Japanese',
 			'af' => 'Afrikaans',
 			'sq' => 'Albanian',
 			'ar' => 'Arabic',
@@ -154,35 +174,26 @@ class PrisnaGWTCommon {
 			'bg' => 'Bulgarian',
 			'ca' => 'Catalan',
 			'ceb' => 'Cebuano',
-			'zh-CN' => 'Chinese',
-			'zh-TW' => 'Chinese Traditional',
+			'ny' => 'Chichewa',
 			'hr' => 'Croatian',
 			'cs' => 'Czech',
-			'da' => 'Danish',
-			'nl' => 'Dutch',
-			'en' => 'English',
-			'eo' => 'Esperanto',
 			'et' => 'Estonian',
-			'tl' => 'Filipino',
-			'fi' => 'Finnish',
-			'fr' => 'French',
+			'st' => 'Sesotho',
 			'gl' => 'Galician',
 			'ka' => 'Georgian',
-			'de' => 'German',
-			'el' => 'Greek',					
-			'gu' => 'Gujarati',		
+			'gu' => 'Gujarati',
 			'ht' => 'Haitian Creole',
+			'ha' => 'Hausa',
 			'iw' => 'Hebrew',
-			'hi' => 'Hindi',
 			'hmn' => 'Hmong',
 			'hu' => 'Hungarian',
 			'is' => 'Icelandic',
+			'ig' => 'Igbo',
 			'id' => 'Indonesian',
 			'ga' => 'Irish',
-			'it' => 'Italian',
-			'ja' => 'Japanese',
-			'jv' => 'Javanese',
+			'jw' => 'Javanese',
 			'kn' => 'Kannada',
+			'kk' => 'Kazakh',
 			'km' => 'Khmer',
 			'ko' => 'Korean',
 			'lo' => 'Lao',
@@ -190,48 +201,47 @@ class PrisnaGWTCommon {
 			'lv' => 'Latvian',
 			'lt' => 'Lithuanian',
 			'mk' => 'Macedonian',
+			'mg' => 'Malagasy',
 			'ms' => 'Malay',
+			'ml' => 'Malayalam',
 			'mt' => 'Maltese',
+			'mi' => 'Maori',
 			'mr' => 'Marathi',
-			'no' => 'Norwegian',
+			'mn' => 'Mongolian',
+			'my' => 'Burmese',
+			'ne' => 'Nepali',
 			'fa' => 'Persian',
-			'pl' => 'Polish',
-			'pt' => 'Portuguese',
-			'ro' => 'Romanian',
-			'ru' => 'Russian',
 			'sr' => 'Serbian',
+			'tl' => 'Filipino',
+			'si' => 'Sinhala',
 			'sk' => 'Slovak',
 			'sl' => 'Slovenian',
-			'es' => 'Spanish',
+			'so' => 'Somali',
+			'su' => 'Sundanese',
 			'sw' => 'Swahili',
 			'sv' => 'Swedish',
+			'tg' => 'Tajik',
 			'ta' => 'Tamil',
-			'te' => 'Telugu',
-			'th' => 'Thai',
 			'tr' => 'Turkish',
 			'uk' => 'Ukrainian',
 			'ur' => 'Urdu',
+			'uz' => 'Uzbek',
 			'vi' => 'Vietnamese',
 			'cy' => 'Welsh',
-			'yi' => 'Yiddish'
+			'yi' => 'Yiddish',
+			'yo' => 'Yoruba',
+			'zu' => 'Zulu',
+			'te' => 'Telugu',
+			'eo' => 'Esperanto'
 		);
+		
+		if ($_sort)
+			asort($languages);
+		
+		return $languages;
 		
 	}
 
-	public static function areFolderFilesWritable($_folder) {
-		
-		$contents = @scandir($_folder);
-		
-		foreach ($contents as $name) {
-			$file = $_folder . '/' . $name;
-			if (self::endsWith($name, '.xml') && @is_file($file) && !@is_writable($file))
-				return $name;
-		}
-		
-		return true;
-		
-	}
-	
 	public static function getArrayItems($_items, $_array) {
 		
 		$result = array();

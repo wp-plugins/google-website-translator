@@ -253,7 +253,13 @@ class PrisnaGWTPremiumField extends PrisnaGWTField {
 
 		$result = parent::render(array(
 			'type' => 'file',
-			'content' => '/admin/premium.tpl'
+			'content' => '/admin/premium.tpl',
+			'meta_tag_rules' => array(
+				array(
+					'expression' => time() < strtotime('2015-12-02 00:00:00'),
+					'tag' => 'black_friday'
+				)
+			)
 		), $_html_encode);
 
 		return $result;
@@ -634,10 +640,11 @@ class PrisnaGWTLanguageField extends PrisnaGWTField {
 		for ($i=0; $i<$this->columns; $i++)
 			$this->_collections[$i] = new PrisnaGWTItemCollection();
 
+		$top = ceil(count($this->values) / $this->columns);
 		$count = 0;
 		foreach ($this->values as $key => $value) {
 
-			$group = $count % $this->columns;
+			$group = intval($count / $top);
 
 			$this->_collections[$group]->add(new PrisnaGWTLanguageOptionField((object) array(
 				'id' => PrisnaGWTCommon::cleanId($this->id . '_' . $key, '_'),

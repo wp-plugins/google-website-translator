@@ -1,17 +1,17 @@
 === Google Website Translator by Prisna.net ===
 Contributors: Prisna
 Tags: translation plugin, automatic translation, machine translation, automatic translate, google website translator, google translator, google language translator, language translate, language translator, multi language, translate, translation
-Stable tag: 1.0
+Stable tag: 1.1
 Requires at least: 3.3
 Tested up to: 4.3
 License: GPL2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Translate your website into 80+ languages. This plugin includes the whole set of Google's Website Translator features, no disabled functionality.
+Translate your website into 90+ languages. This plugin includes the whole set of Google's Website Translator features, no disabled functionality.
 
 == Description ==
 
-This plugin brings the power of Google's automatic translation service to translate your website into 80+ languages. It also comes with a slick admin panel, so it can be installed into your client's website without losing the professional look and feel of your work.
+This plugin brings the power of Google's automatic translation service to translate your website into 90+ languages. It also comes with a slick admin panel, so it can be installed into your client's website without losing the professional look and feel of your work.
 
 = Features: =
 * Easy set up, including simple settings with inline help that everybody can understand.
@@ -46,7 +46,7 @@ There are a number of Google translation plugins in this great repository. Howev
 == Frequently Asked Questions ==
 
 = What are the supported languages? =
-Afrikaans, Albanian, Arabic, Armenian, Azerbaijani, Basque, Belarusian, Bengali, Bosnian, Bulgarian, Catalan, Cebuano, Chinese, Chinese (Traditional Han), Croatian, Czech, Danish, Dutch, English, Esperanto, Estonian, Filipino, Finnish, French, Galician, Georgian, German, Greek, Gujarati, Haitian, Hebrew, Hindi, Hmong, Hungarian, Icelandic, Indonesian, Irish, Italian, Japanese, Javanese, Kannada, Khmer, Korean, Lao, Latin, Latvian, Lithuanian, Macedonian, Malay, Maltese, Marathi, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swahili, Swedish, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu, Vietnamese, Welsh and Yiddish.
+Afrikaans, Albanian, Arabic, Armenian, Azerbaijani, Basque, Belarusian, Bengali, Bosnian, Bulgarian, Catalan, Cebuano, Chichewa, Chinese Simplified, Chinese Traditional, Croatian, Czech, Danish, Dutch, English, Esperanto, Estonian, Filipino, Finnish, French, Galician, Georgian, German, Greek, Gujarati, Haitian Creole, Hausa, Hebrew, Hindi, Hmong, Hungarian, Icelandic, Igbo, Indonesian, Irish, Italian, Japanese, Javanese, Kannada, Kazakh, Khmer, Korean, Lao, Latin, Latvian, Lithuanian, Macedonian, Malagasy, Malay, Malayalam, Maltese, Maori, Marathi, Mongolian, Burmese, Nepali, Norwegian, Persian, Polish, Portuguese, Punjabi, Romanian, Russian, Serbian, Sesotho, Sinhala, Slovak, Slovenian, Somali, Spanish, Sundanese, Swahili, Swedish, Tajik, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu, Uzbek, Vietnamese, Welsh, Yiddish, Yoruba and Zulu.
 
 = How can I exclude some parts from being translated? =
 You should add the *notranslate* style class to the container HTML element. Or if you want to exclude just a piece of text, you should wrap it within a HTML element with the *notranslate* style class, for instance:
@@ -76,8 +76,15 @@ Support includes:
 
 == Changelog ==
 
+= 1.1 =
+Release date: November 19th, 2015
+
+* 29 new languages: Armenian, Bengali, Bosnian, Burmese, Cebuano, Chichewa, Hausa, Hmong, Igbo, Javanese, Kazakh, Khmer, Lao, Malagasy, Malayalam, Maltese, Maori, Marathi, Mongolian, Nepali, Punjabi, Sesotho, Sinhala, Somali, Tajik, Uzbek, Yoruba and Zulu.
+* Combined flags into one single image file.
+* Higher quality flags.
+
 = 1.0 =
-* Initial release.
+Initial release date: September 29th, 2014
 
 == Upgrade Notice ==
 

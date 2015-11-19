@@ -94,6 +94,8 @@ class PrisnaGWTOutput extends PrisnaGWTItem {
 	protected static $_rendered;
 
 	public $custom_css;
+	public $flags_css;
+	public $flags_image_path;
 	public $flags_formatted;
 	public $options_formatted;
 	
@@ -104,6 +106,7 @@ class PrisnaGWTOutput extends PrisnaGWTItem {
 		$this->_properties = $_properties;
 		$this->_gen_options();
 		$this->_set_properties();
+		$this->_set_flags_css();
 		self::_set_rendered(false);
 
 	}
@@ -121,6 +124,51 @@ class PrisnaGWTOutput extends PrisnaGWTItem {
 		
 		self::$_rendered = $_state;
 		
+	}
+	
+	protected function _set_flags_css() {
+		
+		if ($this->_has_flags()) {
+			
+			$this->flags_image_path = PRISNA_GWT__IMAGES;
+			
+			$languages = PrisnaGWTConfig::getSettingValue('languages');
+			
+			if (!PrisnaGWTConfig::getSettingValue('all_languages')) {
+				$available_languages = PrisnaGWTConfig::getSettingValue('available_languages');
+				$languages = array_intersect($languages, $available_languages);
+			}
+			
+			$all_languages = PrisnaGWTCommon::getLanguages(false);
+			$flags_css = array();
+
+			$ix = 0;
+
+			$box_x = 0;
+			$box_y = 0;
+			$box_width = 22;
+			$box_height = 16;
+			
+			foreach ($all_languages as $language => $name) {
+				
+				$ix++;
+
+				if (in_array($language, $languages))
+					$flags_css[] = '.prisna-gwt-language-' . $language . ' a { background-position: -' . $box_x . 'px -' . $box_y . 'px !important; }';
+				
+				if ($ix % 10 == 0) {
+					$box_x = 0;
+					$box_y += $box_height;
+				}
+				else
+					$box_x += $box_width;
+				
+			}
+			
+			$this->flags_css = implode("\n", $flags_css);
+			
+		}
+
 	}
 	
 	protected static function _get_rendered() {
@@ -212,6 +260,11 @@ class PrisnaGWTOutput extends PrisnaGWTItem {
 		$flag_template = PrisnaGWTConfig::getSettingValue('flag_template');
 
 		$languages = PrisnaGWTConfig::getSettingValue('languages');
+		
+		if (!PrisnaGWTConfig::getSettingValue('all_languages')) {
+			$available_languages = PrisnaGWTConfig::getSettingValue('available_languages');
+			$languages = array_intersect($languages, $available_languages);
+		}
 
 		$flags_items = array();
 		

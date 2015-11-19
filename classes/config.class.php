@@ -429,7 +429,7 @@ class PrisnaGWTConfig {
 				'id' => 'prisna_flag_template',
 				'type' => 'textarea',
 				'value' => '<li class="prisna-gwt-flag-container prisna-gwt-language-{{ language_code }}">
-	<a href="javascript:;" onclick="PrisnaGWT.translate(\'{{ language_code }}\'); return false;" title="{{ language_name }}"><img src="{{ flags_path }}{{ language_name_no_space }}.gif" alt="{{ language_name }}"/></a>
+	<a href="javascript:;" onclick="PrisnaGWT.translate(\'{{ language_code }}\'); return false;" title="{{ language_name }}"></a>
 </li>',
 				'dependence' => 'templates_heading',
 				'dependence_show_value' => 'true',

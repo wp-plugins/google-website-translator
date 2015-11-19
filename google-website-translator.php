@@ -3,9 +3,9 @@
 /*
  * Plugin Name: Google Website Translator by Prisna.net
  * Plugin URI: http://wordpress.org/extend/plugins/google-website-translator/
- * Description: This plugin brings the power of Google's automatic translation service to translate your website into 70+ languages. It also comes with a slick admin panel, so it can be installed into your client's website without losing the professional look and feel of your work.
+ * Description: This plugin brings the power of Google's automatic translation service to translate your website into 90+ languages. It also comes with a slick admin panel, so it can be installed into your client's website without losing the professional look and feel of your work.
  * Author: Prisna
- * Version: 1.0
+ * Version: 1.1
  * Author URI: http://www.prisna.net/
  * License: GPL2+
  * Text Domain: prisna-gwt

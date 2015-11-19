@@ -24,13 +24,17 @@
 	padding: 0 !important;
 	border: none !important;
 }
-.prisna-gwt-flag-container a,
-.prisna-gwt-flag-container a img {
+.prisna-gwt-flag-container a {
 	display: inline-block;
 	margin: 0 !important;
 	padding: 0 !important;
 	border: none !important;
+	background-repeat: no-repeat !important;
+	background-image: url({{ flags_image_path }}/all.png) !important;
+	width: 22px !important;
+	height: 16px !important;
 }
+{{ flags_css }}
 {{ has_flags.true:end }}
 {{ hide_banner.true:begin }}
 body {
