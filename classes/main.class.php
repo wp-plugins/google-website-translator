@@ -142,26 +142,16 @@ class PrisnaGWTOutput extends PrisnaGWTItem {
 			$all_languages = PrisnaGWTCommon::getLanguages(false);
 			$flags_css = array();
 
-			$ix = 0;
-
-			$box_x = 0;
-			$box_y = 0;
-			$box_width = 22;
-			$box_height = 16;
-			
 			foreach ($all_languages as $language => $name) {
 				
-				$ix++;
-
-				if (in_array($language, $languages))
-					$flags_css[] = '.prisna-gwt-language-' . $language . ' a { background-position: -' . $box_x . 'px -' . $box_y . 'px !important; }';
-				
-				if ($ix % 10 == 0) {
-					$box_x = 0;
-					$box_y += $box_height;
+				if (in_array($language, $languages)) {
+					
+					$coordinates = PrisnaGWTCommon::getLanguageCoordinates($language);
+					
+					if (!empty($coordinates))
+						$flags_css[] = '.prisna-gwt-language-' . $language . ' a { background-position: ' . $coordinates[0] . 'px ' . $coordinates[1] . 'px !important; }';
+					
 				}
-				else
-					$box_x += $box_width;
 				
 			}
 			
