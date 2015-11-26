@@ -146,7 +146,7 @@ class PrisnaGWTOutput extends PrisnaGWTItem {
 				
 				if (in_array($language, $languages)) {
 					
-					$coordinates = PrisnaGWTCommon::getLanguageCoordinates($language);
+					$coordinates = PrisnaGWTCommon::getLanguageCoordinates(strtolower($language));
 					
 					if (!empty($coordinates))
 						$flags_css[] = '.prisna-gwt-language-' . $language . ' a { background-position: ' . $coordinates[0] . 'px ' . $coordinates[1] . 'px !important; }';
